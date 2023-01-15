@@ -255,8 +255,47 @@
 	filter: grayscale(100%);
 }
 
+/* contact section */
+
+.contact {
+	display: grid;
+	grid-template-columns: 1fr 0.5fr 1fr;
+	background-color: #fff4e7;
+	border-radius: 8px;
+	padding: 40px;
+	margin: 20px 0;
+}
+.contact i {
+	color: #424242;
+}
+.address h3,
+.phone,
+.email {
+	font-size: 25px;
+	color: #727272;
+	font-weight: 500;
+	padding: 10px 0;
+}
+.contact-title,
+.about-title {
+	padding: 20px 0;
+	font-size: 35px;
+	color: #131313;
+}
+.about-description p {
+	font-size: 20px;
+	font-weight: 400;
+	color: #727272;
+	margin: 20px 0;
+}
+.about-us i {
+	font-size: 40px;
+	color: #424242;
+}
+
 /* footer */
 .footer {
+	margin-top: 40px;
 	background-color: #fff4e7;
 	border-radius: 8px;
 }
@@ -359,6 +398,12 @@
 	}
 	.sponsor-icon img {
 		padding: 15px 0;
+	}
+
+	/* contact section */
+	.contact {
+		margin: 35px 15px;
+		grid-template-columns: 1fr;
 	}
 
 	/* footer */
