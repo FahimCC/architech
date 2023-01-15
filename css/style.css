@@ -1,11 +1,12 @@
 /* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;600;700&display=swap');
 
 /* Common Styles */
 * {
 	margin: 0;
 	padding: 0;
 	font-family: 'Work Sans', sans-serif;
+	font-weight: 700;
 }
 .primary-btn {
 	font-size: 20px;
@@ -15,6 +16,8 @@
 	color: #fff;
 	border: 0;
 	margin: 20px;
+	cursor: pointer;
+	font-weight: 600;
 }
 
 /* header section*/
@@ -43,6 +46,7 @@
 	font-size: 18px;
 	color: #424242;
 	padding: 0 20px;
+	font-weight: 400;
 }
 
 .banner-title {
@@ -72,9 +76,47 @@
 	padding: 20px 0;
 }
 
+/* quick list section */
+
+.quick-list {
+	display: grid;
+	grid-column-gap: 10px;
+	grid-template-columns: 1.4fr 1fr;
+	align-items: center;
+	padding: 40px 0;
+}
+.quick-list-image {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	gap: 7px;
+}
+.quick-list-info {
+	width: 70%;
+}
+.quick-list-title {
+	font-size: 45px;
+	margin: 0 20px;
+}
+.quick {
+	font-weight: 500;
+	color: #727272;
+}
+.span-features {
+	color: #ff900e;
+}
+.quick-list-description p {
+	color: #727272;
+	font-weight: 400;
+	margin: 10px 20px;
+}
+
+/* features section */
+
 /* Mobile Device */
 
 @media screen and (max-width: 576px) {
+	/* header section */
 	.container {
 		width: 100%;
 	}
@@ -93,6 +135,27 @@
 	.banner-title,
 	.banner {
 		padding: 0 10px;
+	}
+
+	/* features section */
+	.quick-list {
+		margin: 0 10px;
+		grid-template-columns: 1fr;
+		grid-column-gap: 0;
+	}
+	.quick-list-image {
+		justify-content: center;
+		flex-wrap: nowrap;
+		flex-direction: column;
+	}
+	.quick-list-info {
+		width: 100%;
+		margin: 10px 0;
+	}
+	.quick-list-title,
+	.quick-list-description p,
+	.primary-btn {
+		margin-left: 0;
 	}
 }
 
